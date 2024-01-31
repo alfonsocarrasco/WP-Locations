@@ -83,6 +83,42 @@ if ( $item ):
                 required
             >
         </div>
+        <div>
+            <label for="telefono"> Teléfono: <span style="color: red;">*</span></label>
+            <input
+                type="number"
+                name="telefono"
+                id="telefono"
+                title="Ingrese a 10 digitos."
+                value="<?= $item->telefono; ?>"
+                pattern="[0-9]{10}"
+                style="text-align: left; padding-left: 20px;"
+                required
+            >
+        </div>
+        <div>
+            <label for="website"> Website: <span style="color: red;">*</span></label>
+            <input
+                type="text"
+                name="website"
+                id="website"
+                title="Ingrese el sitio web"
+                value="<?= $item->sitio; ?>"
+                style="text-align: left; padding-left: 20px;"
+            >
+        </div>
+        <div>
+            <label for="email"> Email" <span style="color: red;">*</span></label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                title="Ingrese email correcto"
+                value="<?= $item->email; ?>"
+                style="text-align: left; padding-left: 20px;"
+                required
+            >
+        </div>
         <div id="notificacionAddLocation" style="
         color: #7d0000;
         text-align: right;

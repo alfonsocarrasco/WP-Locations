@@ -52,6 +52,9 @@ function process_save_wp_location() {
     $data['ciudad']    = sanitize_text_field( $_POST['ciudad'] );
     $data['entidad'] = intval( $_POST['entidad'] );
     $data['cp']    = intval( $_POST['cp'] );
+    $data['telefono']    = intval( $_POST['telefono'] );
+    $data['email']    = sanitize_text_field( $_POST['email'] );
+    $data['sitio']    = sanitize_text_field( $_POST['sitio'] );
 
     $result = false;
     

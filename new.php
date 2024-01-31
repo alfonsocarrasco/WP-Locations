@@ -18,15 +18,15 @@
             <input type="text" name="calle_numero" id="calle_numero" required value="">
         </div>
         <div>
-            <label for="colonia">Colonia <span style="color: red;">*</span></label>
+            <label for="colonia">Colonia: <span style="color: red;">*</span></label>
             <input type="text" name="colonia" id="colonia" required value="">
         </div>
         <div>
-            <label for="ciudad">Ciudad <span style="color: red;">*</span></label>
+            <label for="ciudad">Ciudad: <span style="color: red;">*</span></label>
             <input type="text" name="ciudad" id="ciudad" required value="">
         </div>
         <div>
-            <label for="entidad">Estado<span style="color: red;">*</span></label>
+            <label for="entidad">Estado: <span style="color: red;">*</span></label>
             <select name="entidad" id="entidad" required>
                 <option value="">-- Selecciona un estado --</option>
                 <option value="1">Aguascalientes</option>
@@ -64,7 +64,7 @@
             </select>
         </div>
         <div>
-            <label for="cp">Código postal <span style="color: red;">*</span></label>
+            <label for="cp">Código postal: <span style="color: red;">*</span></label>
             <input
                 type="number"
                 name="cp"
@@ -76,6 +76,43 @@
                 required
             >
         </div>
+        <div>
+            <label for="telefono"> Teléfono: <span style="color: red;">*</span></label>
+            <input
+                type="number"
+                name="telefono"
+                id="telefono"
+                title="Ingrese a 10 digitos."
+                value=""
+                pattern="[0-9]{10}"
+                style="text-align: left; padding-left: 20px;"
+                required
+            >
+        </div>
+        <div>
+            <label for="website"> Website: <span style="color: red;">*</span></label>
+            <input
+                type="text"
+                name="website"
+                id="website"
+                title="Ingrese el sitio web"
+                value=""
+                style="text-align: left; padding-left: 20px;"
+            >
+        </div>
+        <div>
+            <label for="email"> Email: <span style="color: red;">*</span></label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                title="Ingrese email correcto"
+                value=""
+                style="text-align: left; padding-left: 20px;"
+                required
+            >
+        </div>
+
         <div id="notificacionAddLocation" style="
         color: #7d0000;
         text-align: right;
